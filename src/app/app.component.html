@@ -1,2 +1,8 @@
-<input type="text" [(ngModel)]="name">
-{{name}}
+<div class="index_body">
+	<div class="main_box">
+		<div (click)="onclkfacebook()" class="main_boxinner"><i class="fab fa-facebook-f"></i>Login via Facebook</div>
+		<div (click)="onclkgmail()" class="main_boxinner"><i class="fab fa-google"></i>Login via Gmail</div>
+		<div (click)="onclklinkedin()" class="main_boxinner"><i class="fab fa-linkedin-in"></i>Login via LinkedIn</div>
+	</div>
+</div>
+<router-outlet></router-outlet>

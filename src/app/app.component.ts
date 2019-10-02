@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Demoangular';
+  constructor(private router:Router){}
+
+  onclkgmail(){
+    this.router.navigate(['/Gmail']);
+  }
+  onclkfacebook(){
+    this.router.navigate(['/Facebook']);
+  }
+  onclklinkedin(){
+    this.router.navigate(['/Linkedin']);
+  }
+
 }
